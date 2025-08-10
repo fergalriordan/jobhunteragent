@@ -1,0 +1,121 @@
+YOUR JOB IS TO DO THE FOLLOWING: 
+Tailor my CV to suit the job listing. Don't go over the top - the current CV is good, so only a handful of subtle changes are required. 
+Output a tailored CV in the same format as my Current CV - no supporting text, markdwon formatting etc should be included. 
+
+Current CV: 
+
+Fergal Riordan
+Ireland (Willing to Relocate) | +353 838754381 | fergalriordan333@gmail.com | Portfolio Website | GitHub | LinkedIn
+PROFILE Software Engineer with a First-Class Honours MEng in Electronic & Computer Engineering from Trinity
+College Dublin. Experienced in machine learning and full-stack development, with a background spanning
+RLHF training for AI agents, AI-powered PRM platforms, and image-to-image translation using CycleGAN.
+Proficient in Python and PyTorch, with a passion for building responsible, human-centred AI solutions.
+TECHNICAL
+SKILLS
+Key Competencies Generative AI, Computer Vision, LLMs, Agentic Workflows
+Programming Languages Python, C#, C, SQL
+Frameworks & Libraries PyTorch, scikit-learn, Pandas, NumPy, OpenCV
+Tools & Platforms Git, Microsoft Azure, SQL Server
+PROFESSIONAL EXPERIENCE
+May 2025 — Present Software Engineer, Channelscaler Galway, Ireland (Hybrid)
+Azure AI, Python, SQL, C#, Blazor
+ Contributing to a leading AI-powered partner relationship management (PRM) platform, currently
+expanding with AI-driven insights and automation features.
+ Integrating AI services into full-stack features in a microservice architecture.
+Sep 2023 — Apr 2025 AI Data Annotator – Software Development, Data Annotation Tech Remote
+Python, Prompt Engineering, RLHF
+ Trained LLM-based chatbots for advanced programming and data science tasks through RLHF and
+A/B testing, applying analytical techniques and prompt engineering skills.
+ Qualified for a domain expert team through consistent success in performance assessments, focusing on
+advanced CS topics including the evaluation of AI coding assistants integrated into modern IDEs.
+RELEVANT PROJECTS
+Sep 2023 — Apr 2024 Master’s Thesis: Enhancing CycleGAN for Day-to-Night Image Translation
+View Project
+Python, PyTorch, GANs, Transfer Learning, Computer Vision, Deep Learning
+ Improved CycleGAN performance using transfer learning, a content-style disentangling scheme, and a
+novel timestamp conditioning architecture.
+ Achieved an improvement of 20% on the Kernel Inception Distance metric over the baseline model.
+ Earned a high First-Class Honours grade of 82% for the research.
+Feb 2025 — Mar 2025 Personal Project: Automated Web Development with the DeepSeek API
+View Project
+Python, TypeScript, Flask, React, Open-Source AI Models, JSON Parsing, API Integration
+ Built a tool to generate full-stack web apps from natural language prompts using the DeepSeek API.
+ Implemented a Flask backend and React frontend for automated code generation and file download.
+EDUCATION
+Sep 2019 — May 2024 Integrated MEng and BEng, Electronic & Computer Engineering, Trinity College Dublin Dublin, Ireland
+ Master’s Result: 1.1 (80%)
+ Bachelor’s Result: 1.1 (72%)
+ Erasmus semester at The University of Iceland, Reykjavík
+Sep 2013 — Jun 2019 Leaving Certificate, Christian Brothers College Cork, Ireland
+ 625 points (7 H1 grades, 1 H2)
+ Ranked among top 70 students nationally
+EXTRA-CURRICULAR ACTIVITIES
+Sep 2021 — May 2022 Control Team, Formula Trinity Dublin, Ireland
+ Participated in Formula Student AI, an international engineering competition where teams design
+autonomous race cars to compete in tasks such as driving, obstacle avoidance, and precision navigation.
+ Implemented control algorithms (PID, Model Predictive Control) for the self-driving vehicle,
+enhancing precision and responsiveness for FS-AI competitions.
+ Gained hands-on experience in a large-scale software project, learning to solve complex problems in a
+collaborative team environment.
+LANGUAGES English Native speaker
+Irish Fluent (C1)
+French Conversational (B1)
+Spanish Basic (A1)
+German Basic (A1)
+SOFT SKILLS  Strong Work Ethic: Honest and hard-working mindset instilled through background on a family farm
+and reflected in academic achievements.
+ Communication Skills: Developed through part time work in high-pressure hospitality roles.
+ Innovative & Ambitious: Evident through the completion of a challenging Master’s thesis and ongoing
+skill development in emerging technology.
+ Cultural Adaptability: Enhanced by Erasmus semester and a long-standing passion for language
+learning.
+HOBBIES  Soccer: Played 11-a-side soccer throughout my teenage years and continue to play 5-a-side regularly.
+ Water Sports: Advanced SSI certification in scuba diving; enjoy surfing and sailing regularly during
+summer.
+ Guitar: Proficient in both acoustic and electric guitar, with experience spanning over 15 years of
+playing and performing. 
+
+Job Listing: 
+
+About the job
+We are a high-growth Series-B InsurTech start-up using data and machine learning to revolutionize the insurance industry. You will be joining a strong and mission driven team, working to build a customer facing product that fundamentally changes the way insurers evaluate risk, enabling them to move from highly manual workflows to digital risk flows.
+Cytora’s Risk Stream is a serverless and cloud native SaaS platform that automates the digitisation, evaluation and decisioning of risks for commercial insurers. Our product drastically improves the working lives of our users, enables our customers to cover more risks, more competitively.
+The Role
+As an AI Engineer (LLM), you will play a critical role in developing our core Large Language Model (LLM) service.
+Our LLM service underpins our Generative AI powered risk digitization platform, providing a unified interface for internal services to leverage the power of LLMs at scale, regardless of the underlying foundational model.
+You will be responsible for building, deploying, and optimizing LLM-powered solutions that directly impact our customer's ability to understand and process risk in commercial insurance.
+What You Will Be Doing
+Problem Solving & Collaboration:
+Engage deeply with domain experts and product managers to understand and define key business problems within risk processing in commercial insurance that can be solved with LLMs. 
+Collaborate closely with consuming service teams to define clear, efficient, and scalable interfaces for LLM tasks. 
+Development & Deployment:
+Design, develop, test, and deploy domain-specific LLM tasks (e.g., information extraction, risk assessment, document summarization, etc.) that are readily consumable by other Cytora services. 
+Stay up-to-date with the latest advancements in LLM technology and actively explore new models, techniques, and tools to enhance our capabilities e.g. Agentic AI. 
+Evaluation & Optimization:
+Develop and implement comprehensive evaluation metrics and tools to rigorously assess and iterate on the performance of LLM tasks. 
+Analyze task performance, identify areas for improvement, and implement strategies to optimize accuracy, efficiency, and cost-effectiveness. 
+Production & Monitoring:
+Monitor the performance of deployed LLM tasks in production, proactively identify and address issues, and ensure high reliability and accuracy. 
+A successful candidate will likely have:
+Problem-Solving: Strong analytical and problem-solving skills, with the ability to address complex AI challenges. 
+Collaboration: Strong communication skills, with the ability to work effectively with cross-functional teams. 
+Enthusiasm: A passion for using AI to solve complex problems and a willingness to learn. 
+Experience in and strong knowledge of using AI/ML and more particularly LLMs e.g. 
+Prompt engineering techniques
+Agentic systems
+Multiple LLM models
+Experience in using LLMs for document processing tasks would be beneficial
+Proficiency in Python and specifically with mypy and asyncio
+Benefits
+Stock options
+Enhanced parental leave
+Private health insurance - UK only*
+Choice of laptop
+Flexi-working
+£2000 travel budget
+Company trips
+We employ people across the UK and Europe (In Ireland, Spain & Austria we use a 3rd party Employer of Record model), and inevitably the benefits that we can offer vary slightly in different territories, due to local employment law and feasibility. Our salary range does not vary depending on territory. 
+Location
+Cytora are a remote-first company. For this role you can be based anywhere in the UK or EU provided you 1. have fluent spoken and written English, and 2. have the permanent right to work without requiring visa sponsorship.
+Equal Opportunities
+We are an equal opportunity employer and value diversity at our company. We do not discriminate on the basis of race, religion, colour, national origin, gender, sexual orientation, age, marital status, veteran status, or disability status.
