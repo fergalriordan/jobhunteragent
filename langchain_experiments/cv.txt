@@ -1,0 +1,66 @@
+Fergal Riordan
+Ireland (Willing to Relocate) | +353 838754381 | fergalriordan333@gmail.com | Portfolio Website | GitHub | LinkedIn
+
+
+PROFILE	Software Engineer with a First-Class Honours MEng in Electronic & Computer Engineering from Trinity College Dublin. Experience spans Agentic AI development for a Partner Relationship Management (PRM) platform, RLHF data annotation for LLMs, and generative AI research in CycleGAN architectures. Proficient in Python and PyTorch, with a passion for building responsible, human-centred AI solutions. 
+
+TECHNICAL SKILLS	Key Competencies              	Agentic AI, Generative AI, Prompt Engineering
+Programming Languages   	Python, C, SQL
+Frameworks & Libraries            	LangChain, PyTorch, Pandas, NumPy
+Tools & Platforms             	 	Azure, Cosmos DB, Docker, Ollama, Git
+
+PROFESSIONAL EXPERIENCE 
+May 2025 — Present	Software Engineer - AI Team, Channelscaler	Galway, Ireland (Hybrid)
+	Azure, Python, Cosmos DB, OpenAI API
+•	Contributed to the company’s first AI team, delivering automation features and agentic workflows for a leading AI-powered Partner Relationship Management (PRM) platform.
+•	Co-developed the company’s first AI agent, combining Cosmos DB NoSQL query-based information retrieval with autonomous actions such as sending client emails and updating database records.
+Sep 2023 — Apr 2025	AI Data Annotator – Software Development, Data Annotation Tech	Remote
+	Python, Prompt Engineering, RLHF
+•	Trained LLM-based chatbots for advanced programming and data science tasks through RLHF and A/B testing, applying analytical techniques and prompt engineering skills.
+•	Qualified for a domain expert team through consistent success in performance assessments, focusing on advanced CS topics including the evaluation of AI coding assistants integrated into modern IDEs.
+
+RELEVANT PROJECTS
+Sep 2023 — Apr 2024	Master’s Thesis: Enhancing CycleGAN for Day-to-Night Image Translation	
+	View Project 
+Python, PyTorch, GANs, Transfer Learning, Computer Vision, Deep Learning
+•	Improved CycleGAN performance using transfer learning, a content-style disentangling scheme, and a novel timestamp conditioning architecture.
+•	Achieved an improvement of 20% on the Kernel Inception Distance metric over the baseline model.
+•	Earned a high First-Class Honours grade of 82% for the research.
+Feb 2025 — Mar 2025	Personal Project: Automated Web Development with the DeepSeek API 	
+	View Project
+Python, TypeScript, Flask, React, Open-Source AI Models, JSON Parsing, API Integration
+•	Built a tool to generate full-stack web apps from natural language prompts using the DeepSeek API.
+•	Implemented a Flask backend and React frontend for automated code generation and file download.
+
+EDUCATION
+Sep 2019 — May 2024	Integrated MEng and BEng, Electronic & Computer Engineering, Trinity College Dublin	Dublin, Ireland
+	•	Master’s Result: 1.1 (80%)
+•	Bachelor’s Result: 1.1 (72%)
+•	Erasmus semester at The University of Iceland, Reykjavík
+Sep 2013 — Jun 2019	Leaving Certificate, Christian Brothers College	Cork, Ireland
+	•	625 points (7 H1 grades, 1 H2)
+•	Ranked among top 70 students nationally
+
+
+EXTRA-CURRICULAR ACTIVITIES
+Sep 2021 — May 2022	Control Team, Formula Trinity	Dublin, Ireland
+	•	Participated in Formula Student AI, an international engineering competition where teams design autonomous race cars to compete in tasks such as driving, obstacle avoidance, and precision navigation.
+•	Implemented control algorithms (PID, Model Predictive Control) for the self-driving vehicle, enhancing precision and responsiveness for FS-AI competitions.
+•	Gained hands-on experience in a large-scale software project, learning to solve complex problems in a collaborative team environment.
+
+LANGUAGES	English 			Native speaker 
+Irish 			Fluent (C1)
+French 			Conversational (B1)
+Spanish 		Basic (A1)
+German 		Basic (A1)
+
+SOFT SKILLS	•	Strong Work Ethic: Honest and hard-working mindset instilled through background on a family farm and reflected in academic achievements. 
+•	Communication Skills: Developed through part time work in high-pressure hospitality roles. 
+•	Innovative & Ambitious: Evident through the completion of a challenging Master’s thesis and ongoing skill development in emerging technology.
+•	Cultural Adaptability: Enhanced by Erasmus semester and a long-standing passion for language learning. 
+
+
+HOBBIES	•	Soccer: Played 11-a-side soccer throughout my teenage years and continue to play 5-a-side regularly. 
+•	Water Sports: Advanced SSI certification in scuba diving; enjoy surfing and sailing regularly during summer.
+•	Guitar: Proficient in both acoustic and electric guitar, with experience spanning over 15 years of playing and performing. 
+
