@@ -6,3 +6,6 @@ langchain
 langchain_tavily
 langgraph
 langchain-openai
+docxtpl
+docx2pdf
+ipywidgets
