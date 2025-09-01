@@ -1,0 +1,68 @@
+{
+    "format": {
+        "type": "json_schema",
+        "name": "cv_schema",
+        "schema": {
+            "type": "object",
+            "properties": {
+                "Profile": {
+                    "type": "string",
+                    "description": "A tailored CV profile section of approximately 50 words."
+                },
+                "Technical Skills": {
+                    "type": "object",
+                    "properties": {
+                        "Key Competencies": {
+                            "type": "array",
+                            "items": {"type": "string"},
+                            "minItems": 3,
+                            "maxItems": 3
+                        },
+                        "Programming Languages": {
+                            "type": "array",
+                            "items": {"type": "string"},
+                            "minItems": 4,
+                            "maxItems": 6
+                        },
+                        "Frameworks & Libraries": {
+                            "type": "array",
+                            "items": {"type": "string"},
+                            "minItems": 4,
+                            "maxItems": 6
+                        },
+                        "Tools & Platforms": {
+                            "type": "array",
+                            "items": {"type": "string"},
+                            "minItems": 4,
+                            "maxItems": 6
+                        }
+                    },
+                    "required": [
+                        "Key Competencies",
+                        "Programming Languages",
+                        "Frameworks & Libraries",
+                        "Tools & Platforms"
+                    ],
+                    "additionalProperties": false
+                },
+                "Relevant Projects": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "Title": {"type": "string"},
+                            "Skills": {"type": "string"}
+                        },
+                        "required": ["Title", "Skills"],
+                        "additionalProperties": false
+                    },
+                    "minItems": 2,
+                    "maxItems": 2
+                }
+            },
+            "required": ["Profile", "Technical Skills", "Relevant Projects"],
+            "additionalProperties": false
+        },
+        "strict": true
+    }
+}
