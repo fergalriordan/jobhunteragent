@@ -1,2 +1,5 @@
 .env
 .venv
+
+cvs/
+job_descriptions/
