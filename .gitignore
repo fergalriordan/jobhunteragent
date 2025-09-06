@@ -1,5 +1,11 @@
 .env
 .venv
 
-cvs/
-job_descriptions/
+# Python cache
+__pycache__/
+*.py[cod]
+
+inputs/job_descriptions
+inputs/user_details
+
+outputs/
