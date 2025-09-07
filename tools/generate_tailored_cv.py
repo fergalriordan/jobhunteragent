@@ -1,12 +1,10 @@
 import json
-from langchain_core.tools import tool
 from openai import OpenAI
 from docxtpl import DocxTemplate, RichText
 from docx import Document
 import shutil
 import tempfile
 import os
-
 
 def load_static_cv_data(cv_data: dict, projects_info_file_path: str):
     """
@@ -89,7 +87,7 @@ def render_cv_to_docx(cv_data: dict, projects_info_file_path: str, template_file
     return output_file_path
 
 
-@tool
+
 def generate_tailored_cv(path_to_job_listing: str, path_to_projects_info: str, path_to_response_format: str, path_to_cv_template: str, path_to_output_cv: str) -> str:
     """
     Generate a tailored CV for job listing.

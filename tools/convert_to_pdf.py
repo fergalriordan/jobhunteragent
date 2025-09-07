@@ -1,7 +1,5 @@
 import subprocess
-from langchain_core.tools import tool
 
-@tool
 def convert_to_pdf(path_to_word_doc: str, path_to_output_pdf: str) -> bool: 
     """Convert Word doc to PDF using docx2pdf CLI"""
     try:
