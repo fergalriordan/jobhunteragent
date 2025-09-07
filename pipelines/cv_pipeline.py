@@ -13,6 +13,8 @@ from tools.convert_to_pdf import convert_to_pdf
 # ---- Define state ----
 class CVPipelineState(BaseModel):
     job_listing: str
+    projects_info: str
+    response_format: str
     cv_template: str
     tailored_cv_path: Optional[str] = None
     approved: bool = False
@@ -21,17 +23,15 @@ class CVPipelineState(BaseModel):
 # ---- Define nodes ----
 def generate_cv_node(state: CVPipelineState):
     """Generate tailored CV (docx)."""
-    output_path = "outputs/tailored_cv.docx"
     try:
         generate_tailored_cv(
             path_to_job_listing=state.job_listing,
-            path_to_projects_info="inputs/user_details/projects.txt",
-            path_to_response_format="inputs/cv_template/response_format.txt",
+            path_to_projects_info=state.projects_info,
+            path_to_response_format=state.response_format,
             path_to_cv_template=state.cv_template,
-            path_to_output_cv=output_path,
+            path_to_output_cv=state.tailored_cv_path,
         )
-        state.tailored_cv_path = output_path
-        print(f"✅ Tailored CV generated: {output_path}")
+        print(f"✅ Tailored CV generated: {state.tailored_cv_path}")
     except Exception as e:
         print(f"❌ Error generating CV: {e}")
         state.tailored_cv_path = None
@@ -58,6 +58,10 @@ def convert_pdf_node(state: CVPipelineState):
         print("❌ CV not approved. Skipping PDF conversion.")
     return state
 
+def failure_node(state: CVPipelineState):
+    print("❌ CV generation failed. Workflow terminated early.")
+    return state
+
 # ---- Build LangGraph workflow ----
 workflow = StateGraph(state_schema=CVPipelineState)
 
@@ -65,15 +69,16 @@ workflow = StateGraph(state_schema=CVPipelineState)
 workflow.add_node("generate_cv", generate_cv_node)
 workflow.add_node("approval", approval_node)
 workflow.add_node("convert_pdf", convert_pdf_node)
+workflow.add_node("failure", failure_node)
 
 # Connect nodes (linear flow)
 workflow.set_entry_point("generate_cv")
 
-# Add conditional edge so graph jumps to end if CV generation fails
+# Add conditional edge so graph jumps to failure node if CV generation fails
 workflow.add_conditional_edges(
     "generate_cv",
-    lambda state: "approval" if state.tailored_cv_path else END,
-    {"approval": "approval", END: END}
+    lambda state: "approval" if state.tailored_cv_path else "failure",
+    {"approval": "approval", "failure": "failure"}
 )
 
 # Conditional edge: only go to convert_pdf if approved, else END
@@ -82,6 +87,7 @@ workflow.add_conditional_edges(
     lambda state: "convert_pdf" if state.approved else END,
     {"convert_pdf": "convert_pdf", END: END}
 )
+workflow.add_edge("failure", END)
 
 # Final step (converting to pdf) always leads to END
 workflow.add_edge("convert_pdf", END)
@@ -94,7 +100,10 @@ app = workflow.compile(checkpointer=memory)
 if __name__ == "__main__":
     inputs = {
         "job_listing": "inputs/job_descriptions/job_description.txt",
+        "projects_info": "inputs/user_details/projects.txt",
+        "response_format": "inputs/cv_template/response_format.txt",
         "cv_template": "inputs/cv_template/cv_template.docx",
+        "tailored_cv_path": "outputs/tailored_cv.docx"
     }
     final_state = app.invoke(inputs, config={"configurable": {"thread_id": "job1"}})
 

@@ -32,10 +32,14 @@ def render_cv_to_docx(cv_data: dict, projects_info_file_path: str, template_file
 
     # Build RichText hyperlinks for the two projects
     project_1_link = RichText()
-    project_1_link.add("View Project", url_id=doc.build_url_id(cv_data["Relevant Projects"][0]["Link"]))
+    link_1 = cv_data["Relevant Projects"][0].get("Link", "")
+    if link_1:
+        project_1_link.add("View Project", url_id=doc.build_url_id(link_1))
 
     project_2_link = RichText()
-    project_2_link.add("View Project", url_id=doc.build_url_id(cv_data["Relevant Projects"][1]["Link"]))
+    link_2 = cv_data["Relevant Projects"][1].get("Link", "")
+    if link_2:
+        project_2_link.add("View Project", url_id=doc.build_url_id(link_2))
 
     # Rename keys for Jinja (no spaces, consistent with template placeholders)
     context = {
@@ -61,7 +65,6 @@ def render_cv_to_docx(cv_data: dict, projects_info_file_path: str, template_file
     doc.save(output_file_path)
     print("Attempt complete")
     print(f"CV saved to {output_file_path}")
-    return output_file_path
 
 def generate_tailored_cv(path_to_job_listing: str, path_to_projects_info: str, path_to_response_format: str, path_to_cv_template: str, path_to_output_cv: str) -> str:
     """
@@ -98,9 +101,7 @@ def generate_tailored_cv(path_to_job_listing: str, path_to_projects_info: str, p
 
         cv_data = json.loads(response.output_text)
         print(json.dumps(cv_data, indent=2))
-        output_file_path = render_cv_to_docx(cv_data, path_to_projects_info, path_to_cv_template, path_to_output_cv)
-
-        return output_file_path
+        render_cv_to_docx(cv_data, path_to_projects_info, path_to_cv_template, path_to_output_cv)
 
     except Exception as e:
         print(f"Error generating CV: {e}")
