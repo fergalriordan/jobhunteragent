@@ -34,6 +34,7 @@ def generate_cv_node(state: CVPipelineState):
         print(f"✅ Tailored CV generated: {output_path}")
     except Exception as e:
         print(f"❌ Error generating CV: {e}")
+        state.tailored_cv_path = None
     return state
 
 def approval_node(state: CVPipelineState):
@@ -67,8 +68,22 @@ workflow.add_node("convert_pdf", convert_pdf_node)
 
 # Connect nodes (linear flow)
 workflow.set_entry_point("generate_cv")
-workflow.add_edge("generate_cv", "approval")
-workflow.add_edge("approval", "convert_pdf")
+
+# Add conditional edge so graph jumps to end if CV generation fails
+workflow.add_conditional_edges(
+    "generate_cv",
+    lambda state: "approval" if state.tailored_cv_path else END,
+    {"approval": "approval", END: END}
+)
+
+# Conditional edge: only go to convert_pdf if approved, else END
+workflow.add_conditional_edges(
+    "approval",
+    lambda state: "convert_pdf" if state.approved else END,
+    {"convert_pdf": "convert_pdf", END: END}
+)
+
+# Final step (converting to pdf) always leads to END
 workflow.add_edge("convert_pdf", END)
 
 # Add checkpointing (optional, useful for multiple jobs)

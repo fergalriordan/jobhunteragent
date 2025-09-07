@@ -128,4 +128,4 @@ def generate_tailored_cv(path_to_job_listing: str, path_to_projects_info: str, p
 
     except Exception as e:
         print(f"Error generating CV: {e}")
-        return ""
+        raise
