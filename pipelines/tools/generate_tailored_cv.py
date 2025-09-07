@@ -24,21 +24,21 @@ def load_static_cv_data(cv_data: dict, projects_info_file_path: str):
             cv_data["Relevant Projects"][i]["Description"] = details.get("Description", "")
 
 
-def preprocess_template(template_file_path: str) -> str:
-    """
-    Replace literal '&' characters in the template with '&amp;' to survive docxtpl rendering.
-    Saves to a temporary file and returns the path.
-    """
-    temp_dir = tempfile.mkdtemp()
-    temp_template_path = os.path.join(temp_dir, "preprocessed_template.docx")
-    shutil.copy(template_file_path, temp_template_path)
+#def preprocess_template(template_file_path: str) -> str:
+#    """
+#    Replace literal '&' characters in the template with '&amp;' to survive docxtpl rendering.
+#    Saves to a temporary file and returns the path.
+#    """
+#    temp_dir = tempfile.mkdtemp()
+#    temp_template_path = os.path.join(temp_dir, "preprocessed_template.docx")
+#    shutil.copy(template_file_path, temp_template_path)
 
-    doc = Document(temp_template_path)
-    for p in doc.paragraphs:
-        for run in p.runs:
-            run.text = run.text.replace("&", "&amp;")
-    doc.save(temp_template_path)
-    return temp_template_path
+#    doc = Document(temp_template_path)
+#    for p in doc.paragraphs:
+#        for run in p.runs:
+#            run.text = run.text.replace("&", "&amp;")
+#    doc.save(temp_template_path)
+#    return temp_template_path
 
 
 def render_cv_to_docx(cv_data: dict, projects_info_file_path: str, template_file_path: str, output_file_path: str):
@@ -50,8 +50,7 @@ def render_cv_to_docx(cv_data: dict, projects_info_file_path: str, template_file
     load_static_cv_data(cv_data, projects_info_file_path)
 
     # Preprocess template to preserve ampersands in static text
-    preprocessed_template_path = preprocess_template(template_file_path)
-    doc = DocxTemplate(preprocessed_template_path)
+    doc = DocxTemplate(template_file_path)
 
     # Build RichText hyperlinks for the two projects
     project_1_link = RichText()
