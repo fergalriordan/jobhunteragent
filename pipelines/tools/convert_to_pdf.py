@@ -1,9 +1,9 @@
-import subprocess
+from docx2pdf import convert
 
-def convert_to_pdf(path_to_word_doc: str, path_to_output_pdf: str) -> bool: 
-    """Convert Word doc to PDF using docx2pdf CLI"""
+def convert_to_pdf(path_to_word_doc: str, path_to_output_pdf: str) -> bool:
     try:
-        subprocess.run(["docx2pdf", path_to_word_doc, path_to_output_pdf], check=True)
+        convert(path_to_word_doc, path_to_output_pdf)
         return True
-    except Exception:
+    except Exception as e:
+        print(f"❌ Error converting to PDF: {e}")
         return False
