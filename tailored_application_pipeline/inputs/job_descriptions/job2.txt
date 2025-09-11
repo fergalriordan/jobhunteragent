@@ -1,0 +1,41 @@
+About PUNKU
+
+
+PUNKU is the leading AI Agent platform for Small and Medium-sized Enterprises (SMEs) globally.
+Our Mission
+
+
+We aim to address the widespread shortage of skilled workers in SMEs, which creates significant economic impact through lost revenue and productivity. Our AI Agents bridge this critical skills gap, enabling businesses to maintain competitiveness and drive growth in today's challenging labor market.
+Tasks
+Your Responsibilities
+
+
+As an engineer with an entrepreneurial mindset, you will:
+
+Create intuitive interfaces and abstractions enabling customers to build their own AI Agents
+
+Design, develop, and maintain key components for the PUNKU platform using Python and TypeScript
+
+Write clean, scalable, and well-documented code that drives our platform forward
+
+Stay at the cutting edge of emerging technologies and apply them to solve real business challenges
+
+
+Requirements
+What We're Looking For
+
+
+We seek an entrepreneurial Software Engineer with future founder ambitions. The ideal candidate:
+
+Has a background in Computer Science, Software Engineering, or related field
+
+Demonstrates exceptional self-learning capabilities and completes projects efficiently
+
+Thinks proactively and executes independently without supervision
+
+Possesses strong TypeScript and Python skills (familiarity with LangChain is a plus)
+
+Has experience with AWS cloud infrastructure
+
+
+If you're an entrepreneurial developer ready to shape the future of AI-powered business solutions, we want you on our team!
