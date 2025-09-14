@@ -9,3 +9,7 @@ inputs/job_descriptions
 inputs/user_details
 
 outputs/
+
+# Batch run logs
+logs/
+*.log
