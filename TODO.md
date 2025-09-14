@@ -2,6 +2,8 @@
 
 - [x] Implement directory-based approval (placeholder for approval through UI)
 
+- [ ] Add mechanism to prevent generation of duplicate drafts
+
 - [ ] Refine and finalise prompt (with variables)
 
 - [ ] Export prompt from playground
