@@ -1,6 +1,6 @@
 ### Next
 
-- [ ] Implement directory-based approval (placeholder for approval through UI)
+- [x] Implement directory-based approval (placeholder for approval through UI)
 
 - [ ] Refine and finalise prompt (with variables)
 
