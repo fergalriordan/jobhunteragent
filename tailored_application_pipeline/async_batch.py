@@ -15,6 +15,12 @@ async def run_job(job_file: Path):
     job_name = job_file.stem
     output_dir = Path(f"outputs/{job_name}")
 
+    output_file = output_dir / "tailored_cv.docx"
+    if output_file.exists():
+        logging.info(f"{job_name} ⏭️ Skipped (already processed).")
+        print(f"⏭️ {job_name} already done, skipping.")
+        return {"job": job_name, "skipped": True}
+
     try:
         pipeline = CVPipeline(
             job_file=job_file,
