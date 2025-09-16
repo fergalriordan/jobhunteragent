@@ -16,6 +16,8 @@
 
 - [ ] Re-visit LangGraph implementation: add re-iterations with user feedback
 
+- [ ] Implement a post-generation validator to reject responses where selections for categorical fields are outside the list of possible values
+
 - [ ] Implement cover letter pipeline
 
 - [ ] Implement LinkedIn message pipeline
