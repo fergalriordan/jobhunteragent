@@ -4,11 +4,11 @@
 
 - [x] Add mechanism to prevent generation of duplicate drafts
 
-- [ ] Refine and finalise prompt (with variables)
+- [x] Refine and finalise prompt (with variables)
 
-- [ ] Export prompt from playground
+- [x] Export prompt from playground
 
-- [ ] Implement structured variable input (user skills, example CVs, etc)
+- [x] Implement structured variable input (user skills, example CVs, etc)
 
 - [ ] Facilitate user customisation of performance (e.g. "User Preferences" section of system prompt)
 
