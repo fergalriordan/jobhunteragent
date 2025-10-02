@@ -1,0 +1,11 @@
+## Profile
+
+{profile_instructions}
+
+## Technical Skills
+
+{skills_info}
+
+## Relevant Projects
+
+{projects_info}

@@ -11,7 +11,6 @@ load_dotenv()
 class CVPipelineState(BaseModel):
     job_listing: str
     projects_info: str
-    response_format: str
     cv_template: str
     tailored_cv_path: Optional[str] = None
 
@@ -22,7 +21,6 @@ def generate_cv_node(state: CVPipelineState):
         generate_tailored_cv(
             path_to_job_listing=state.job_listing,
             path_to_projects_info=state.projects_info,
-            path_to_response_format=state.response_format,
             path_to_cv_template=state.cv_template,
             path_to_output_cv=state.tailored_cv_path,
         )

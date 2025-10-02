@@ -1,0 +1,6 @@
+- This section should summarise the most pertinent skills and experiences based on the template CV, skills outlined in this prompt, and the job description.
+- It must be concise and targeted.
+- Quantify experience where possible: for example, 2 years of freelance data annotation work, ~6 months of professional AI/software engineering experience, 1 year of academic AI research experience from Master's thesis, etc.
+- The opening sentence should always start with one of the following roles/job titles: "Software Engineer", "AI Engineer", "ML Engineer", "Engineer"
+- Distinguish between professional experience, academic experience and other experiences - don't lump everything together.
+- Avoid cliches and filler statements - this is critical.

@@ -15,7 +15,6 @@ class CVPipeline:
         inputs = {
             "job_listing": str(self.job_file),
             "projects_info": str(self.user_details),
-            "response_format": str(self.response_format),
             "cv_template": str(self.template),
             "tailored_cv_path": str(tailored_cv_path),
         }

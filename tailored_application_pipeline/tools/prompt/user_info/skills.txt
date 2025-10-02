@@ -1,0 +1,4 @@
+Key Competencies: Agentic AI, AI Agents, Computer Vision, AI Research, ML Research, Generative AI, Prompt Engineering, Adversarial Prompting, Transfer Learning, Machine Learning, Deep Learning, Open-Source AI Models, Embedded Systems, IoT, Robotics, Algorithm Development, Quantitative Methods
+Programming Languages: Python, C, C++, SQL 
+Frameworks & Libraries: PyTorch, LangChain, LangGraph, Pandas, NumPy, OpenCV, scikit-learn, matplotlib, OpenAI API
+Tools & Platforms: Azure, Cosmos DB, Docker, Ollama, Git 

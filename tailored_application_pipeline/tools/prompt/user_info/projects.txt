@@ -1,0 +1,32 @@
+TITLE: {Master's Thesis: Enhancing CycleGAN for Day-to-Night Image Translation}
+- Researched cycle-consistent generative adversarial networks (CycleGAN) for day-to-night image translation using PyTorch, exploring enhancements for optimized performance.
+- Applied transfer learning using a pre-trained ResNet-18 encoder.
+- Developed novel network architectures, with a content-style disentangling scheme to improve the accuracy of the network and a timestamp input to facilitate the generation of synthetic time-lapses.
+- Attained a First-Class Honours grade of 82% for the project overall.
+
+TITLE: {Personal Project: Automated Web Development with the DeepSeek API} 
+- Built a tool to generate full-stack web apps from natural language prompts using the DeepSeek API.
+- Implemented a Flask backend and React frontend for automated code generation and file download. 
+ 
+TITLE: {Machine Learning for Deception Detection in Natural Language}
+- Investigated machine learning algorithms for deception detection in natural language, performing a classification task in a variety of linguistic domains.
+- Gained experience with data preprocessing and dimensionality reduction techniques for NLP, employing t-SNE for the visualisation of the high-dimensional natural language data.
+- Implemented and presented results for two machine learning techniques - Simple CART and Affinity Propagation - and collaborated with colleagues to perform a comparison with other techniques.
+ 
+TITLE: {IoT Party Game Device Using ESP32 Microcontrollers}
+- Worked within a group to develop an IoT device for interactive party games and language learning, using real-time speech recognition and acoustic location.
+- Utilised ESP32-S3-Korvo board for speech recognition and cloud communications, attaining experience with neural network models on low-power embedded MCUs.
+- Employed AWS IoTCore and Lambda for secure and scalable data processing.
+- Gained experience with the MQTT protocol for low-power communication, and navigated a sophisticated software ecosystem, leveraging Espressif’s Audio Development Framework extensively.
+
+TITLE: {Control Systems for Autonomous Flight of Bitcraze Crazyflie Quadcopters}
+- Developed a variety of control systems for a quadcopter drone using the Crazyflie Python API.
+- Implemented autonomous flight for a single drone using sensor data from a flow deck, enabling it to follow a set course with real-time position monitoring.
+- Developed a microcontroller-based handheld controller to interface with the drone, incorporating thrust, yaw, pitch, and roll control via analog and digital inputs. Extended this to a voice-controlled system using Python’s SpeechRecognition library and Arduino, mapping voice commands to control inputs.
+- Designed and tested a multi-drone swarm flight pattern, using the Swarm class from the Crazyflie API to synchronize two drones in a predefined aerial sequence.
+
+TITLE: {Analysis of a Video of a Draughts Game using OpenCV and C++}
+- Leveraged a variety of classical computer vision techniques to analyse draughts gameplay from a collection of pictures and videos using OpenCV.
+- Exploited histogram back-projection, perspective transformation and histogram comparison for pixel classification, enabling the identification of board squares and game pieces.
+- Used Gaussian Mixture Model to process video frames, comparing consecutive frames to detect moves.
+- Used OpenCV edge detection methods and Hough transforms to refine feature extraction, achieving high accuracy in distinguishing between normal pieces and kings.

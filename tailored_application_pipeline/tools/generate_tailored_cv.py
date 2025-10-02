@@ -2,6 +2,8 @@ import json
 from openai import OpenAI
 from docxtpl import DocxTemplate, RichText
 
+from tools.build_prompt import build_prompt
+
 def load_static_cv_data(cv_data: dict, projects_info_file_path: str):
     """
     Load static project data from a JSON file and enrich the CV data.
@@ -51,13 +53,12 @@ def render_cv_to_docx(cv_data: dict, projects_info_file_path: str, template_file
             return rt
         return ""
 
-    # Context is guaranteed safe now
     context = {
         "Profile": cv_data.get("Profile", ""),
-        "Key_Competencies": cv_data["Technical Skills"].get("Key Competencies", []),
-        "Programming_Languages": cv_data["Technical Skills"].get("Programming Languages", []),
-        "Frameworks_and_Libraries": cv_data["Technical Skills"].get("Frameworks & Libraries", []),
-        "Tools_and_Platforms": cv_data["Technical Skills"].get("Tools & Platforms", []),
+        "Key_Competencies": cv_data["Technical Skills"].get("Key Competencies", ""),
+        "Programming_Languages": cv_data["Technical Skills"].get("Programming Languages", ""),
+        "Frameworks_and_Libraries": cv_data["Technical Skills"].get("Frameworks & Libraries", ""),
+        "Tools_and_Platforms": cv_data["Technical Skills"].get("Tools & Platforms", ""),
         "Project_1_Title": cv_data["Relevant Projects"][0]["Title"],
         "Project_1_Dates": cv_data["Relevant Projects"][0]["Dates"],
         "Project_1_Skills": cv_data["Relevant Projects"][0]["Skills"],
@@ -76,7 +77,7 @@ def render_cv_to_docx(cv_data: dict, projects_info_file_path: str, template_file
     print(f"✅ CV saved to {output_file_path}")
 
 
-def generate_tailored_cv(path_to_job_listing: str, path_to_projects_info: str, path_to_response_format: str, path_to_cv_template: str, path_to_output_cv: str) -> str:
+def generate_tailored_cv(path_to_job_listing: str, path_to_projects_info: str, path_to_cv_template: str, path_to_output_cv: str) -> str:
     """
     Generate a tailored CV for job listing.
     The CV is stored in a word document which the user can inspect and edit.
@@ -88,26 +89,9 @@ def generate_tailored_cv(path_to_job_listing: str, path_to_projects_info: str, p
         with open(path_to_job_listing, "r", encoding="utf-8") as f:
             job_listing = f.read()
 
-        with open(path_to_response_format, "r", encoding="utf-8") as f:
-            response_format = json.load(f)
+        prompt_kwargs = build_prompt(job_listing)
 
-        response = client.responses.create(
-            input=f"""
-            =====================================================================
-            Job Listing:
-
-            {job_listing}
-            =====================================================================
-            
-            Return a tailored CV for this job listing as a JSON object with fields:
-            Profile, Technical Skills, Relevant Projects.
-            """,
-            prompt={
-                "id": "pmpt_68b0c358291c81968a00e9414e386276009a458f13092457",
-                "version": "13"
-            },
-            text=response_format  # schema for structured model output
-        )
+        response = client.responses.create(**prompt_kwargs)
 
         cv_data = json.loads(response.output_text)
         print(json.dumps(cv_data, indent=2))

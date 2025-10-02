@@ -1,0 +1,55 @@
+{
+  "type": "object",
+  "properties": {
+    "Profile": {
+      "type": "string",
+      "description": "A tailored CV profile section of approximately 50 words."
+    },
+    "Technical Skills": {
+      "type": "object",
+      "properties": {
+        "Key Competencies": {
+          "type": "string",
+          "description": "List of 3 relevant competencies"
+        },
+        "Programming Languages": {
+          "type": "string",
+          "description": "List of 4-6 relevant programming languages"
+        },
+        "Frameworks & Libraries": {
+          "type": "string",
+          "description": "List of 4-6 relevant frameworks and libraries"
+        },
+        "Tools & Platforms": {
+          "type": "string",
+          "description": "List of 4-6 relevant tools and platforms"
+        }
+      },
+      "required": ["Key Competencies", "Programming Languages", "Frameworks & Libraries", "Tools & Platforms"],
+      "additionalProperties": false
+    },
+    "Relevant Projects": {
+      "type": "array",
+      "description": "List of the 2 most relevant and impressive projects",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Title": {
+            "type": "string",
+            "description": "Title of the project"
+          },
+          "Skills": {
+            "type": "string",
+            "description": "Relevant skills used in project"
+          }
+        },
+        "required": ["Title", "Skills"],
+        "additionalProperties": false
+      },
+      "minItems": 2,
+      "maxItems": 2
+    }
+  },
+  "required": ["Profile", "Technical Skills", "Relevant Projects"],
+  "additionalProperties": false
+}

@@ -1,0 +1,43 @@
+About The Role
+
+We are seeking an AI Agent Engineer to join our team at Naptha AI, where you'll help build and test AI agents using our interoperability platform. This role is perfect for developers who are passionate about AI and eager to gain hands-on experience with the latest agent frameworks and large language models.
+
+Core Responsibilities
+
+Build and deploy AI agents using various frameworks
+Test agent interactions and document behavior
+Help improve agent performance and reliability
+Assist with agent integration and testing
+Contribute to our growing agent ecosystem
+
+Required Experience
+
+Strong Python programming skills
+Experience working with LLMs (ChatGPT, Claude, etc.)
+Basic understanding of AI concepts
+Ability to write clear documentation
+Enthusiasm for AI and emerging technology
+
+Nice to have
+
+Familiarity with agent frameworks (LangChain, AutoGPT, etc.)
+Basic DevOps knowledge
+Experience with API development
+Open source contributions
+
+About The Hiring Process
+
+Initial technical screen
+Coding exercise
+Team interview
+Final discussion
+
+Compensation & Benefits
+
+Competitive salary and equity
+Remote-first work environment
+Full medical coverage
+Flexible PTO
+Learning budget
+
+Join us in building the future of AI agent interoperability! This is an excellent opportunity to grow your skills in a rapidly evolving field.

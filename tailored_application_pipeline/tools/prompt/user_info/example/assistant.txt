@@ -1,0 +1,37 @@
+{
+  "Profile": "AI Engineer with strong Python expertise and experience delivering production-ready AI agents for a PRM platform. Background includes 6 months in professional software engineering, 2 years of freelance work in prompt engineering and RLHF data annotation, a Master’s thesis on generative models, and personal projects in automation pipelines and agentic workflows.",
+  "Technical Skills": {
+    "Key Competencies": [
+      "Agentic AI",
+      "Generative AI",
+      "Prompt Engineering"
+    ],
+    "Programming Languages": [
+      "Python",
+      "C++",
+      "SQL"
+    ],
+    "Frameworks & Libraries": [
+      "PyTorch",
+      "LangChain",
+      "LangGraph",
+      "OpenAI API"
+    ],
+    "Tools & Platforms": [
+      "Azure",
+      "Docker",
+      "Cosmos DB",
+      "Git"
+    ]
+  },
+  "Relevant Projects": [
+    {
+      "Title": "Master's Thesis: Enhancing CycleGAN for Day-to-Night Image Translation",
+      "Skills": "Python, PyTorch, GANs, Transfer Learning, Deep Learning"
+    },
+    {
+      "Title": "Automated Web Development with the DeepSeek API",
+      "Skills": "Python, TypeScript, Flask, React, API Integration"
+    }
+  ]
+}
