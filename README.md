@@ -50,6 +50,19 @@ Built to explore **LangGraph orchestration**, **document generation pipelines**,
 - Spreadsheet integration for tracking applications
 - Broader agentic capabilities (company research agents, job/skill trends tracking, etc)
 
+---
+
+## 🧭 Agent Context
+
+This project includes an [`AGENTS.md`](./AGENTS.md) file that defines the system’s architecture, design principles, and coding conventions.
+
+All contributors - human or AI - should refer to it before writing or modifying code.  
+
+> 💡 If you’re using an AI coding assistant (e.g., GitHub Copilot, ChatGPT, or Cursor),  
+> manually direct it to **read and follow `AGENTS.md`** when working on this repository.
+
+---
+
 ## 📜 License
 
 MIT - free to use and adapt, but please credit this repo if you build on it.
